@@ -1,5 +1,7 @@
 <?php
 
+file_put_contents("telegram_log.txt", date('Y-m-d H:i:s') . "\n" . file_get_contents("php://input") . "\n\n", FILE_APPEND);
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
